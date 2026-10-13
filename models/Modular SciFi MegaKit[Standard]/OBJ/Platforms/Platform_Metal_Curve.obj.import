@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd86u447q1ycc"
+path="res://.godot/imported/Platform_Metal_Curve.obj-7a2fd9cc11e3c33bb3206e3686c0fcaa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Metal_Curve.obj-7a2fd9cc11e3c33bb3206e3686c0fcaa.mesh"]
+
+source_file="res://models/Modular SciFi MegaKit[Standard]/OBJ/Platforms/Platform_Metal_Curve.obj"
+dest_files=["res://.godot/imported/Platform_Metal_Curve.obj-7a2fd9cc11e3c33bb3206e3686c0fcaa.mesh", "res://.godot/imported/Platform_Metal_Curve.obj-7a2fd9cc11e3c33bb3206e3686c0fcaa.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

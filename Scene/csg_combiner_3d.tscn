@@ -1,0 +1,144 @@
+[gd_scene load_steps=15 format=3 uid="uid://diineex1fp5yy"]
+
+[ext_resource type="Texture2D" uid="uid://wsrvjb1tgh6r" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/ConcreteFloor-01_32x64.png" id="1_jcok4"]
+[ext_resource type="Texture2D" uid="uid://b3l2vw2lkf2xk" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/Grid-001-2_Base-002.png" id="2_uin5d"]
+[ext_resource type="Texture2D" uid="uid://drhcm6bfmxc8b" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/ConcretePanel-Hazard-Full-01_64.png" id="3_uin5d"]
+[ext_resource type="Texture2D" uid="uid://cccm7f6nw4x38" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/Metal-Panel-002_Section-003.png" id="4_a1guq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7kc8x"]
+diffuse_mode = 1
+albedo_texture = ExtResource("1_jcok4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2drnj"]
+diffuse_mode = 1
+albedo_texture = ExtResource("1_jcok4")
+uv1_scale = Vector3(1.38, 1.912, 1.38)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcok4"]
+diffuse_mode = 1
+albedo_texture = ExtResource("2_uin5d")
+uv1_scale = Vector3(2.515, 0.7, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uin5d"]
+diffuse_mode = 1
+albedo_texture = ExtResource("3_uin5d")
+uv1_scale = Vector3(6.205, 6.205, 6.205)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1guq"]
+diffuse_mode = 1
+albedo_texture = ExtResource("4_a1guq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5xq8j"]
+diffuse_mode = 1
+albedo_texture = ExtResource("4_a1guq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6coc6"]
+diffuse_mode = 1
+albedo_texture = ExtResource("4_a1guq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wdait"]
+diffuse_mode = 1
+albedo_texture = ExtResource("4_a1guq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iliq0"]
+diffuse_mode = 1
+albedo_texture = ExtResource("4_a1guq")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a1guq"]
+size = Vector3(0.126709, 1, 1)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D"]
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(8.795, 0, 0, 0, 8.37884, -2.67339, 0, 2.67339, 8.37884, -0.062, 6.093, -25.16)
+use_collision = true
+flip_faces = true
+size = Vector3(1, 0.711249, 2.34863)
+material = SubResource("StandardMaterial3D_7kc8x")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(8.795, 0, 0, 0, 8.795, 0, 0, 0, 8.795, -0.0776465, 3.105, -5.92126)
+use_collision = true
+flip_faces = true
+size = Vector3(1, 0.711249, 2.34863)
+material = SubResource("StandardMaterial3D_2drnj")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.6565, -42.7653)
+flip_faces = true
+radius = 8.53418
+height = 6.85938
+material = SubResource("StandardMaterial3D_jcok4")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(12.715, 0, 0, 0, 12.715, 0, 0, 0, 12.715, 10.2751, 9.57222, -85.0486)
+flip_faces = true
+size = Vector3(2.61621, 1, 5.4585)
+material = SubResource("StandardMaterial3D_uin5d")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0096, 7.01787, -130.338)
+flip_faces = true
+size = Vector3(7.08008, 7.55817, 21.4481)
+material = SubResource("StandardMaterial3D_a1guq")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.0767, 7.01787, -100.45)
+flip_faces = true
+size = Vector3(7.08008, 7.55817, 9.70904)
+material = SubResource("StandardMaterial3D_5xq8j")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.0767, 7.01787, -80.4539)
+flip_faces = true
+size = Vector3(7.08008, 7.55817, 9.70904)
+material = SubResource("StandardMaterial3D_6coc6")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.5746, 7.01787, -100.45)
+flip_faces = true
+size = Vector3(7.08008, 7.55817, 9.70904)
+material = SubResource("StandardMaterial3D_wdait")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.5746, 7.01787, -80.4539)
+flip_faces = true
+size = Vector3(7.08008, 7.55817, 9.70904)
+material = SubResource("StandardMaterial3D_iliq0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -10.4781, 7.04038, -80.4729)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.436646, 0, 0)
+shape = SubResource("BoxShape3D_a1guq")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -10.4781, 7.04038, -100.441)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389802, 0, 0)
+shape = SubResource("BoxShape3D_a1guq")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 31.1308, 7.04038, -100.441)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427565, 0, 0)
+shape = SubResource("BoxShape3D_a1guq")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 31.1308, 7.04038, -80.2586)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.429839, 0, 0)
+shape = SubResource("BoxShape3D_a1guq")

@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://be2v11b10ohi3"]
+
+[ext_resource type="Script" uid="uid://b1h7eadhxvh0e" path="res://Script/autodoor.gd" id="1_fe4h8"]
+[ext_resource type="Texture2D" uid="uid://cvlslg586itgl" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/Grid-001-2_Base-003.png" id="2_0gxvo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0gxvo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3wm6k"]
+albedo_texture = ExtResource("2_0gxvo")
+uv1_scale = Vector3(2.985, 2.985, 2.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3wm6k"]
+material = SubResource("StandardMaterial3D_3wm6k")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6gdyj"]
+
+[node name="autodoor" type="Node3D"]
+script = ExtResource("1_fe4h8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(12.419, 0, 0, 0, 9.935, 0, 0, 0, 0.497, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_0gxvo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_3wm6k")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(5.3, 0, 0, 0, 5.3, 0, 0, 0, 5.3, 0, 0, 6.36133)
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.89, 0, 0, 0, 1.89, 0, 0, 0, 1.89, 0, 0, -0.295056)
+shape = SubResource("BoxShape3D_6gdyj")
+
+[connection signal="body_entered" from="Area3D" to="." method="enter_trigger"]
+[connection signal="body_exited" from="Area3D" to="." method="exit_trigger"]

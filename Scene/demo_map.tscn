@@ -1,0 +1,178 @@
+[gd_scene load_steps=13 format=3 uid="uid://ceyhf6tmlt60x"]
+
+[ext_resource type="Script" uid="uid://cind3bj1xc8dp" path="res://Script/demo_map.gd" id="1_7i6ye"]
+[ext_resource type="PackedScene" uid="uid://cxcpxcyv8iiy" path="res://Scene/Player.tscn" id="1_ykspe"]
+[ext_resource type="PackedScene" uid="uid://diineex1fp5yy" path="res://Scene/csg_combiner_3d.tscn" id="2_jxrwg"]
+[ext_resource type="PackedScene" uid="uid://be2v11b10ohi3" path="res://Scene/autodoor.tscn" id="4_xvmgn"]
+[ext_resource type="Script" uid="uid://btp71ualfw544" path="res://Script/dialogue_trigger.gd" id="5_enxqh"]
+[ext_resource type="PackedScene" uid="uid://vmo8mmv8q3ew" path="res://Scene/prop_light_floor_2.tscn" id="5_p3eav"]
+[ext_resource type="AudioStream" uid="uid://cucrcm0v30cti" path="res://resource/voices/DD Whirring Spirals.ogg" id="6_enxqh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ykspe"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_jxrwg"]
+sky_material = SubResource("ProceduralSkyMaterial_ykspe")
+
+[sub_resource type="Environment" id="Environment_c5k55"]
+background_mode = 1
+background_color = Color(0.0431373, 0.0431373, 0.0588235, 1)
+sky = SubResource("Sky_jxrwg")
+ambient_light_source = 2
+ambient_light_color = Color(0.12549, 0.12549, 0.145098, 1)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_jxrwg"]
+vertices = PackedVector3Array(7.06878, 3.72388, -121.062, 12.8188, 3.72388, -121.062, 12.8188, 3.72388, -140.312, 7.06878, 3.72388, -140.312, -5.68122, 3.47388, -103.562, -7.68122, 3.72388, -103.312, -7.68122, 3.72388, -97.562, -5.68122, 3.47388, -97.312, 26.3188, 3.47388, -95.312, 26.3188, 3.47388, -97.312, 13.0688, 3.47388, -119.062, -5.68122, 3.47388, -95.312, 28.3188, 3.72388, -97.562, 28.3188, 3.72388, -103.312, 26.3188, 3.47388, -103.562, 6.81878, 3.47388, -119.062, -5.68122, 3.47388, -119.062, 26.3188, 3.47388, -119.062, -15.1812, 3.72388, -103.312, -15.1812, 3.72388, -97.562, 35.8188, 3.72388, -97.562, 35.8188, 3.72388, -103.312, -5.68122, 3.47388, -85.562, 26.3188, 3.47388, -85.562, -5.68122, 3.47388, -83.562, -7.68122, 3.72388, -83.312, -7.68122, 3.72388, -77.562, -5.68122, 3.47388, -77.312, 26.3188, 3.47388, -77.312, 26.3188, 3.47388, -83.562, 28.3188, 3.72388, -77.562, 28.3188, 3.72388, -83.312, -5.68122, 3.47388, -75.312, 26.3188, 3.47388, -75.312, -15.1812, 3.72388, -83.312, -15.1812, 3.72388, -77.562, 35.8188, 3.72388, -77.562, 35.8188, 3.72388, -83.312, -5.68122, 3.47388, -51.062, 26.3188, 3.47388, -51.062, 1.81878, 6.72388, -50.062, -1.68122, 6.72388, -50.062, -1.93122, 6.72388, -49.562, 2.56878, 6.72388, -49.312, 7.81878, 6.72388, -42.812, 5.56878, 6.72388, -48.312, -7.68122, 6.72388, -43.312, -2.93122, 6.72388, -36.312, 2.81878, 6.72388, -36.312, -2.43122, 6.47388, -35.562, 2.31878, 6.47388, -35.562, -5.68122, 6.72388, -48.062, -7.43122, 6.72388, -41.562, -5.68122, 6.72388, -37.562, 5.56878, 6.72388, -37.312, -2.68122, 6.22388, -34.812, -3.93122, 0.473877, 3.68796, 3.81878, 0.473877, 3.68796, 2.56878, 6.22388, -34.812, -3.21007, 0.973877, -18.5236, -3.30622, 0.473877, -15.562, 3.19378, 0.473877, -15.562, 3.09763, 0.973877, -18.5236, 3.81878, 6.22388, -34.812, 3.81878, 0.473877, -15.562, 3.81878, 0.973877, -18.5236, -3.93122, 6.22388, -34.812, -3.93122, 0.973877, -18.5236, -3.93122, 0.473877, -15.562)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(9, 8, 10), PackedInt32Array(10, 8, 7), PackedInt32Array(7, 8, 11), PackedInt32Array(12, 9, 13), PackedInt32Array(13, 9, 14), PackedInt32Array(10, 14, 9), PackedInt32Array(1, 10, 0), PackedInt32Array(0, 10, 15), PackedInt32Array(15, 10, 4), PackedInt32Array(4, 10, 7), PackedInt32Array(4, 16, 15), PackedInt32Array(10, 17, 14), PackedInt32Array(19, 18, 6), PackedInt32Array(6, 18, 5), PackedInt32Array(13, 21, 12), PackedInt32Array(12, 21, 20), PackedInt32Array(11, 8, 22), PackedInt32Array(22, 8, 23), PackedInt32Array(25, 24, 26), PackedInt32Array(26, 24, 27), PackedInt32Array(27, 24, 29), PackedInt32Array(27, 29, 28), PackedInt32Array(24, 22, 29), PackedInt32Array(29, 22, 23), PackedInt32Array(30, 28, 31), PackedInt32Array(31, 28, 29), PackedInt32Array(28, 33, 27), PackedInt32Array(27, 33, 32), PackedInt32Array(35, 34, 26), PackedInt32Array(26, 34, 25), PackedInt32Array(31, 37, 30), PackedInt32Array(30, 37, 36), PackedInt32Array(39, 38, 33), PackedInt32Array(33, 38, 32), PackedInt32Array(41, 40, 42), PackedInt32Array(42, 40, 43), PackedInt32Array(45, 44, 42), PackedInt32Array(42, 44, 48), PackedInt32Array(42, 48, 47), PackedInt32Array(42, 47, 46), PackedInt32Array(49, 47, 50), PackedInt32Array(50, 47, 48), PackedInt32Array(46, 51, 42), PackedInt32Array(52, 46, 53), PackedInt32Array(53, 46, 47), PackedInt32Array(42, 43, 45), PackedInt32Array(44, 54, 48), PackedInt32Array(50, 58, 49), PackedInt32Array(49, 58, 55), PackedInt32Array(55, 58, 59), PackedInt32Array(59, 58, 62), PackedInt32Array(59, 62, 61), PackedInt32Array(59, 61, 60), PackedInt32Array(60, 61, 57), PackedInt32Array(60, 57, 56), PackedInt32Array(58, 63, 62), PackedInt32Array(62, 63, 65), PackedInt32Array(62, 65, 61), PackedInt32Array(61, 65, 64), PackedInt32Array(61, 64, 57), PackedInt32Array(55, 59, 66), PackedInt32Array(66, 59, 67), PackedInt32Array(67, 59, 60), PackedInt32Array(67, 60, 68), PackedInt32Array(68, 60, 56)]
+agent_max_slope = 60.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7i6ye"]
+radius = 1.5835
+
+[node name="DemoMap" type="Node3D"]
+script = ExtResource("1_7i6ye")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_c5k55")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_jxrwg")
+
+[node name="CSGCombiner3D" parent="NavigationRegion3D" instance=ExtResource("2_jxrwg")]
+
+[node name="Player" parent="." instance=ExtResource("1_ykspe")]
+
+[node name="LightsRoom1" type="Node3D" parent="."]
+
+[node name="Prop_Light_Floor2" parent="LightsRoom1" instance=ExtResource("5_p3eav")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.71129, 4.46609)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightsRoom1/Prop_Light_Floor2"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor3" parent="LightsRoom1" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.74228e-08, 1, 4.37114e-08, 0.00249736, 11.5666, -34.2666)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightsRoom1/Prop_Light_Floor3"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="LightsRoom2" type="Node3D" parent="."]
+
+[node name="Prop_Light_Floor4" parent="LightsRoom2" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-0.422618, -0.906308, 3.82137e-15, 3.9616e-08, -1.84732e-08, 1, -0.906308, 0.422618, 4.37114e-08, 7.43417, 12.8204, -45.5453)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightsRoom2/Prop_Light_Floor4"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor5" parent="LightsRoom2" instance=ExtResource("5_p3eav")]
+transform = Transform3D(0.422618, 0.906308, 0, 3.9616e-08, -1.84732e-08, 1, 0.906308, -0.422618, -4.37114e-08, -7.49485, 12.82, -40.16)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightsRoom2/Prop_Light_Floor5"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor6" parent="LightsRoom2" instance=ExtResource("5_p3eav")]
+transform = Transform3D(0.34202, -0.939693, -4.10753e-08, 0, -4.37114e-08, 1, -0.939693, -0.34202, -1.49502e-08, 7.10413, 12.82, -39.0902)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightsRoom2/Prop_Light_Floor6"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor7" parent="LightsRoom2" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-0.375869, 0.926673, 3.2009e-08, 3.9616e-08, -1.84732e-08, 1, 0.926673, 0.375869, -2.97676e-08, -7.44019, 12.82, -45.3784)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightsRoom2/Prop_Light_Floor7"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Doors" type="Node3D" parent="."]
+
+[node name="autodoor" parent="Doors" instance=ExtResource("4_xvmgn")]
+transform = Transform3D(1, 0, 0, 0, 0.939609, -0.34225, 0, 0.34225, 0.939609, 0.0731893, 10.7394, -34.9639)
+
+[node name="LightRoom3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7764, 10.4451, -85.8863)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LightRoom3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.142633, -0.186553, 0.12429)
+light_color = Color(0.316785, 0.316785, 0.316785, 1)
+shadow_enabled = true
+omni_range = 40.0
+omni_attenuation = 0.5
+
+[node name="Prop_Light_Floor7" parent="LightRoom3" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -17.1194, 0.582493, 5.48826)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightRoom3/Prop_Light_Floor7"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor8" parent="LightRoom3" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -17.1194, 0.582493, -14.5572)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightRoom3/Prop_Light_Floor8"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor9" parent="LightRoom3" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 16.1542, 0.582493, -14.5572)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightRoom3/Prop_Light_Floor9"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Prop_Light_Floor10" parent="LightRoom3" instance=ExtResource("5_p3eav")]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 16.1542, 0.582493, 5.56216)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightRoom3/Prop_Light_Floor10"]
+transform = Transform3D(1, 0, 0, 0, 0.601006, -0.799244, 0, 0.799244, 0.601006, 0, 0, 0)
+light_color = Color(0.654337, 0.602075, 1.15514e-06, 1)
+light_energy = 5.0
+light_indirect_energy = 5.0
+spot_range = 20.0
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.59315, -43.2564)
+script = ExtResource("5_enxqh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(3.48, 0, 0, 0, 3.48, 0, 0, 0, 3.48, 0.474878, 1.01895, -0.422901)
+shape = SubResource("CylinderShape3D_7i6ye")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.475411, 3.92945, -0.367683)
+stream = ExtResource("6_enxqh")
+area_mask = 5
+
+[node name="Trigger" type="Node3D" parent="."]

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5iqywcwqmc15"
+path="res://.godot/imported/BottomMetal_Corner_Square_Outer_2.obj-0c1f67be6e2f446ca14e0bf2eb784eaf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BottomMetal_Corner_Square_Outer_2.obj-0c1f67be6e2f446ca14e0bf2eb784eaf.mesh"]
+
+source_file="res://models/Modular SciFi MegaKit[Standard]/OBJ/Walls/BottomMetal_Corner_Square_Outer_2.obj"
+dest_files=["res://.godot/imported/BottomMetal_Corner_Square_Outer_2.obj-0c1f67be6e2f446ca14e0bf2eb784eaf.mesh", "res://.godot/imported/BottomMetal_Corner_Square_Outer_2.obj-0c1f67be6e2f446ca14e0bf2eb784eaf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

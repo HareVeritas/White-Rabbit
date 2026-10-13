@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cucrcm0v30cti"
+path="res://.godot/imported/DD Whirring Spirals.ogg-0965ec274efdc0cbb5b077749349464d.oggvorbisstr"
+
+[deps]
+
+source_file="res://resource/voices/DD Whirring Spirals.ogg"
+dest_files=["res://.godot/imported/DD Whirring Spirals.ogg-0965ec274efdc0cbb5b077749349464d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

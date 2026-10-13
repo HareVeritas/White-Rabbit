@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dj0k6merma0dk"
+path="res://.godot/imported/ShortWall_WhitePlate2_Corner_Outer.obj-71e7159fa5f4f9b1822c661911466a7c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_WhitePlate2_Corner_Outer.obj-71e7159fa5f4f9b1822c661911466a7c.mesh"]
+
+source_file="res://models/Modular SciFi MegaKit[Standard]/OBJ/Walls/ShortWall_WhitePlate2_Corner_Outer.obj"
+dest_files=["res://.godot/imported/ShortWall_WhitePlate2_Corner_Outer.obj-71e7159fa5f4f9b1822c661911466a7c.mesh", "res://.godot/imported/ShortWall_WhitePlate2_Corner_Outer.obj-71e7159fa5f4f9b1822c661911466a7c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

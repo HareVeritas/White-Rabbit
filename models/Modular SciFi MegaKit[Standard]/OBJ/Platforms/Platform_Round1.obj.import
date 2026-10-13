@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cg58jdfsjyce6"
+path="res://.godot/imported/Platform_Round1.obj-5bf96fd1358319131a28ce945d91fecc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Round1.obj-5bf96fd1358319131a28ce945d91fecc.mesh"]
+
+source_file="res://models/Modular SciFi MegaKit[Standard]/OBJ/Platforms/Platform_Round1.obj"
+dest_files=["res://.godot/imported/Platform_Round1.obj-5bf96fd1358319131a28ce945d91fecc.mesh", "res://.godot/imported/Platform_Round1.obj-5bf96fd1358319131a28ce945d91fecc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

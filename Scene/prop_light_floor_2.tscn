@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://vmo8mmv8q3ew"]
+
+[ext_resource type="PackedScene" uid="uid://b5um6smvrq6u5" path="res://models/Modular SciFi MegaKit[Standard]/glTF/Props/Prop_Light_Floor.gltf" id="1_srurk"]
+[ext_resource type="Texture2D" uid="uid://bw1fi584bcx06" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/Metal-Panel_Section-001-3.png" id="2_7xebn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sn85d"]
+albedo_texture = ExtResource("2_7xebn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bxrcg"]
+emission_enabled = true
+emission = Color(1, 0.435294, 0, 1)
+emission_energy_multiplier = 6.0
+
+[node name="Prop_Light_Floor2" instance=ExtResource("1_srurk")]
+
+[node name="Prop_Light_Floor" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sn85d")
+surface_material_override/1 = SubResource("StandardMaterial3D_bxrcg")

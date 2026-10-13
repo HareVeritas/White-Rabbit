@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2j8sah7cl8gl"
+path="res://.godot/imported/TopWindow_Corner_Curve_Inner.obj-8f2e29b2bed76d416e9c59f535578b83.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TopWindow_Corner_Curve_Inner.obj-8f2e29b2bed76d416e9c59f535578b83.mesh"]
+
+source_file="res://models/Modular SciFi MegaKit[Standard]/OBJ/Walls/TopWindow_Corner_Curve_Inner.obj"
+dest_files=["res://.godot/imported/TopWindow_Corner_Curve_Inner.obj-8f2e29b2bed76d416e9c59f535578b83.mesh", "res://.godot/imported/TopWindow_Corner_Curve_Inner.obj-8f2e29b2bed76d416e9c59f535578b83.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7mu8l25jm8b0"
+path="res://.godot/imported/WallBand_Corner_Square_Outer.obj-a17a4304bbc48f10d32b8e2a641183d8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallBand_Corner_Square_Outer.obj-a17a4304bbc48f10d32b8e2a641183d8.mesh"]
+
+source_file="res://models/Modular SciFi MegaKit[Standard]/OBJ/Walls/WallBand_Corner_Square_Outer.obj"
+dest_files=["res://.godot/imported/WallBand_Corner_Square_Outer.obj-a17a4304bbc48f10d32b8e2a641183d8.mesh", "res://.godot/imported/WallBand_Corner_Square_Outer.obj-a17a4304bbc48f10d32b8e2a641183d8.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
