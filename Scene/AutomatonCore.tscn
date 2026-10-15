@@ -1,0 +1,46 @@
+[gd_scene load_steps=10 format=3 uid="uid://coa5a33is1rql"]
+
+[ext_resource type="PackedScene" uid="uid://bqu64uwta1trj" path="res://Scene/AutoMatonCore.gltf" id="1_cw36l"]
+[ext_resource type="Texture2D" uid="uid://dgd7vdw20r2la" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/Metal-Panel-004_Section-001-2.png" id="2_12cyv"]
+[ext_resource type="Texture2D" uid="uid://hfk7byys0e6" path="res://resource/WhatsApp Image 2025-08-13 at 10.22.37_0061ef61.jpg" id="3_8q2w3"]
+[ext_resource type="Texture2D" uid="uid://chls1viri3oie" path="res://resource/LVL11 Games - Quake-Like Textures/Level Eleven Games Sci-Fi Texture Pack v1/ConcreteFloor-Hazard-Full-01_64.png" id="4_codf8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tebxs"]
+albedo_texture = ExtResource("2_12cyv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ta6e"]
+albedo_texture = ExtResource("2_12cyv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r861i"]
+albedo_texture = ExtResource("3_8q2w3")
+emission_enabled = true
+emission = Color(0.925082, 0.71655, 0.904042, 1)
+emission_energy_multiplier = 5.36
+emission_texture = ExtResource("3_8q2w3")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wm6yq"]
+albedo_texture = ExtResource("4_codf8")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmoys"]
+albedo_texture = ExtResource("4_codf8")
+uv1_scale = Vector3(2, 2, 2)
+
+[node name="blockbench_export" instance=ExtResource("1_cw36l")]
+
+[node name="sphere" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_tebxs")
+
+[node name="sphere2" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0ta6e")
+
+[node name="cylinder" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_r861i")
+
+[node name="cylinder2" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_wm6yq")
+
+[node name="cylinder3" parent="." index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_lmoys")

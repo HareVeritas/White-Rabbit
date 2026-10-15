@@ -98,9 +98,17 @@ var _jump_buffer_timer: float = 0.0
 var _coyote_timer: float = 0.0
 
 
+
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_camera_base_position = camera.position
+	
+	
+	if is_in_group("player"):
+		print("Yes, I am in the player group!")
+	else:
+		print("NO nigga")
+	   
 
 
 func _unhandled_input(event: InputEvent) -> void:
